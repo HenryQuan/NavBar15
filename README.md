@@ -2,8 +2,8 @@
 
 A sample project for FB9402449. Working in progress...
 
-## Issues
+## Screenshots
 
-- Project created by Xcode 13 isn't compatible with Xcode 12
-  - By setting it to be compatible breaks the entire app
-- Project created by Xcode 12 works with Xcode 13 and has the same behaviour
+|                 iOS 14                  |                    iOS 15                    |
+| :-------------------------------------: | :------------------------------------------: |
+| ![normal header](screenshots/ios14.png) | ![transparent header](screenshots/ios15.png) |

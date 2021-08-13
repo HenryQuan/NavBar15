@@ -25,11 +25,23 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9F5-PY-NaH">
+                    <rect key="frame" x="0.0" y="466.5" width="414" height="31"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="NEXT"/>
+                    <connections>
+                        <action selector="onNextTapped:" destination="-1" eventType="touchUpInside" id="WvJ-qu-xkV"/>
+                    </connections>
+                </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="VaH-xs-1F4" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="0ze-d1-TXI"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="9F5-PY-NaH" secondAttribute="trailing" id="GSo-fQ-RZa"/>
+                <constraint firstItem="9F5-PY-NaH" firstAttribute="top" secondItem="VaH-xs-1F4" secondAttribute="bottom" constant="8" id="MX0-r3-UZO"/>
+                <constraint firstItem="9F5-PY-NaH" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Wq4-g1-SJM"/>
+                <constraint firstItem="9F5-PY-NaH" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="fbI-Lz-Bdm"/>
                 <constraint firstItem="VaH-xs-1F4" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="wLo-M7-Snp"/>
             </constraints>
             <point key="canvasLocation" x="132" y="114"/>

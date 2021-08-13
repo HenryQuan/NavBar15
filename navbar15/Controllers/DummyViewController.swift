@@ -31,6 +31,10 @@ class DummyViewController: UIViewController {
         }
     }
     
+    @IBAction func onNextTapped(_ sender: UIButton) {
+        
+    }
+    
     @objc private func onClose(_ sender: UIBarButtonItem) {
         dismiss(animated: true, completion: nil)
     }

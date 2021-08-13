@@ -9,6 +9,7 @@ import UIKit
 
 extension UINavigationController {
     
+    /// This is working on iOS 14 but not on iOS 15
     func applyStyle(tint: UIColor, bar: UIColor, text: UIColor, material: Bool = false, underline: Bool = false) {
         if material {
             // Not used that much
@@ -23,9 +24,7 @@ extension UINavigationController {
         if underline {
             // Not used that much
             navigationBar.shadowImage = UIImage()
-            // add a line here mnually
         } else {
-            #warning("Could this be the issue??")
             navigationBar.shadowImage = UIImage()
         }
         

@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  RootViewController.swift
 //  navbar15
 //
 //  Created by Yiheng Quan on 13/8/21.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class RootViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,7 +31,7 @@ class ViewController: UIViewController {
 }
 
 // MARK: - Helpers
-private extension ViewController {
+private extension RootViewController {
     
     func presentWithNavBar(_ controller: UIViewController, with style: UIModalPresentationStyle = .automatic) {
         let navController = UINavigationController(rootViewController: controller)

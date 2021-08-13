@@ -25,7 +25,10 @@ class DummyViewController: UIViewController {
         let closeButton = UIBarButtonItem(barButtonSystemItem: .close, target: self, action: #selector(onClose(_:)))
         navigationItem.leftBarButtonItem = closeButton
         
-        setNavBarTheme(.dark)
+        if let theme = NavBarTheme(rawValue: Int(arc4random()) % 4) {
+            print(theme)
+            setNavBarTheme(theme)
+        }
     }
     
     @objc private func onClose(_ sender: UIBarButtonItem) {

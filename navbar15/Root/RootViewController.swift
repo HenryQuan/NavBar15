@@ -25,8 +25,8 @@ class RootViewController: UIViewController {
     }
     
     @IBAction func showCustomNavBarTapped(_ sender: UIButton) {
-        let dummy = DummyViewController()
-        presentWithNavBar(dummy)
+//        let dummy = DummyViewController()
+//        presentWithNavBar(dummy)
     }
 }
 

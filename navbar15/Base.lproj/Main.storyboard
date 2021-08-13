@@ -23,16 +23,25 @@
                                         <rect key="frame" x="0.0" y="0.0" width="168" height="31"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Show Modal"/>
+                                        <connections>
+                                            <action selector="showModalTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LNY-Ro-jDP"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MMv-rI-Ngr">
                                         <rect key="frame" x="0.0" y="39" width="168" height="31"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Show FullScreen"/>
+                                        <connections>
+                                            <action selector="showFullScreenTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3FK-KM-yFW"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G6j-yA-exp">
                                         <rect key="frame" x="0.0" y="78" width="168" height="31"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Show Custom Nav Bar"/>
+                                        <connections>
+                                            <action selector="showCustomNavBarTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="q61-t8-0mZ"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aO7-PF-FOY">
                                         <rect key="frame" x="0.0" y="117" width="168" height="31"/>

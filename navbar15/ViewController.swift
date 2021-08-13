@@ -14,5 +14,30 @@ class ViewController: UIViewController {
         
         navigationController?.navigationBar.barTintColor = .blue
     }
+    
+    // MARK: - Button Actions
+    @IBAction func showModalTapped(_ sender: UIButton) {
+        let dummy = DummyViewController()
+        presentWithNavBar(dummy)
+    }
+    
+    @IBAction func showFullScreenTapped(_ sender: UIButton) {
+        let dummy = DummyViewController()
+        dummy.modalPresentationStyle = .overFullScreen
+        presentWithNavBar(dummy)
+    }
+    
+    @IBAction func showCustomNavBarTapped(_ sender: UIButton) {
+        let dummy = DummyViewController()
+        presentWithNavBar(dummy)
+    }
 }
 
+// MARK: - Helpers
+private extension ViewController {
+    
+    func presentWithNavBar(_ controller: UIViewController) {
+        let navController = UINavigationController(rootViewController: controller)
+        present(navController, animated: true, completion: nil)
+    }
+}

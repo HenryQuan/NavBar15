@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19150" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yHp-Ay-Wcs">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9ab-bj-hA9">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19134"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -16,42 +16,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="HL7-6O-OwM">
-                                <rect key="frame" x="123" y="354.5" width="168" height="187"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="uwV-YY-avU">
+                                <rect key="frame" x="130.5" y="395" width="153" height="106"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OtW-Lj-cJO">
-                                        <rect key="frame" x="0.0" y="0.0" width="168" height="31"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="Show Modal"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VHT-Px-OjU">
+                                        <rect key="frame" x="0.0" y="0.0" width="153" height="30"/>
+                                        <state key="normal" title="Show Modal"/>
                                         <connections>
-                                            <action selector="showModalTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LNY-Ro-jDP"/>
+                                            <action selector="showModalTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RpN-T1-HBa"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MMv-rI-Ngr">
-                                        <rect key="frame" x="0.0" y="39" width="168" height="31"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="Show FullScreen"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iPO-eU-aWZ">
+                                        <rect key="frame" x="0.0" y="38" width="153" height="30"/>
+                                        <state key="normal" title="Show FullScreen"/>
                                         <connections>
-                                            <action selector="showFullScreenTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3FK-KM-yFW"/>
+                                            <action selector="showFullScreenTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YKr-YI-axq"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G6j-yA-exp">
-                                        <rect key="frame" x="0.0" y="78" width="168" height="31"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="Show Custom Nav Bar"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wGJ-aj-F0F">
+                                        <rect key="frame" x="0.0" y="76" width="153" height="30"/>
+                                        <state key="normal" title="Show Custom Nav Bar"/>
                                         <connections>
-                                            <action selector="showCustomNavBarTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="q61-t8-0mZ"/>
+                                            <action selector="showCustomNavBarTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AZ9-wo-UVq"/>
                                         </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aO7-PF-FOY">
-                                        <rect key="frame" x="0.0" y="117" width="168" height="31"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" title=" "/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cHc-1Y-Azj">
-                                        <rect key="frame" x="0.0" y="156" width="168" height="31"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" title=" "/>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -59,31 +46,31 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="HL7-6O-OwM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fgy-Zt-VMh"/>
-                            <constraint firstItem="HL7-6O-OwM" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="rnk-0O-7KW"/>
+                            <constraint firstItem="uwV-YY-avU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3lg-cD-8Mg"/>
+                            <constraint firstItem="uwV-YY-avU" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="e9a-pK-7En"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Nav Bar 15" id="8Nx-ij-ykb"/>
+                    <navigationItem key="navigationItem" title="Nav Bar 15" id="CDW-TH-58x"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="939.13043478260875" y="83.705357142857139"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="DXM-rw-Eh8">
+        <scene sceneID="AQP-cc-xD0">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="yHp-Ay-Wcs" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9ab-bj-hA9" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="h5c-a9-qcR">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="9Wf-3w-kGV">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="XoL-Jf-jxJ"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="xp5-Hw-Tec"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="n7h-is-um8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SgQ-3u-p87" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="28.985507246376812" y="83.705357142857139"/>
         </scene>

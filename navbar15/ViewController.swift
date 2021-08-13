@@ -21,8 +21,7 @@ class ViewController: UIViewController {
     
     @IBAction func showFullScreenTapped(_ sender: UIButton) {
         let dummy = DummyViewController()
-        dummy.modalPresentationStyle = .overFullScreen
-        presentWithNavBar(dummy)
+        presentWithNavBar(dummy, with: .overFullScreen)
     }
     
     @IBAction func showCustomNavBarTapped(_ sender: UIButton) {
@@ -34,8 +33,9 @@ class ViewController: UIViewController {
 // MARK: - Helpers
 private extension ViewController {
     
-    func presentWithNavBar(_ controller: UIViewController) {
+    func presentWithNavBar(_ controller: UIViewController, with style: UIModalPresentationStyle = .automatic) {
         let navController = UINavigationController(rootViewController: controller)
+        navController.modalPresentationStyle = style
         present(navController, animated: true, completion: nil)
     }
 }

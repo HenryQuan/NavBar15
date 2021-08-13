@@ -20,6 +20,13 @@ class DummyViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "Dummy Title"
+        
+        let closeButton = UIBarButtonItem(barButtonSystemItem: .close, target: self, action: #selector(onClose(_:)))
+        navigationItem.leftBarButtonItem = closeButton
     }
     
+    @objc private func onClose(_ sender: UIBarButtonItem) {
+        dismiss(animated: true, completion: nil)
+    }
 }
